@@ -17,3 +17,14 @@ variable "sg_ports" {
   description = "list of ingress ports"
   default     = [8200, 8201,8300, 9200, 9500]
 }
+
+variable "instances" {
+    type = map
+    default= {
+      default ="t3.nano"
+      dev="t3.micro"
+      prd="t3.large"
+      
+    
+    }
+} 
